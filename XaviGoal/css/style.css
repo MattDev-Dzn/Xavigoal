@@ -1,0 +1,375 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0b20; /* Couleur de fond sombre */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Couleur du texte par défaut (blanc) */
+    
+}
+
+/*CSS POUR LA NAV BAR*/
+
+.navbar {
+    background-color: #0f0b2000;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #DE023F;
+    margin-top: 10px;
+}
+.toggle-button{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.toggle-button .bar{
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 3px 2px;
+}
+
+.center {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 1px;
+    color: #DE023F;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.226);
+    font-family: Arial black, Helvetica, sans-serif;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin-right: 25px;
+}
+
+a {
+    color: #DE023F;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.resize-link {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.568);
+    transition: transform 0.3s ease; /* Animation du redimensionnement */
+    
+}
+
+/* Ajoutez une règle pour agrandir le lien au survol */
+.resize-link:hover {
+    transform: scale(1.2); /* Modifiez la valeur selon vos préférences */
+}
+@media screen and (max-width: 768px) {
+    .navbar{
+        padding: 20px 25px;
+        z-index: 100;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: #0f0b20;
+        padding: 25px;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+    .nav-links li{
+        padding: 12px 0px;
+    }
+}
+
+/* CSS POUR LE COUNTER */
+
+.counter {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #DE023F;
+  }
+  
+  #count {
+    color: #DE023F;
+  }
+
+  .GR{
+    margin-left: 40px ;
+    margin-top: 10px;
+    font: 20px;
+  }
+
+/*CSS POUR TOUTES LES CARDS*/
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.test{
+    margin: auto;
+}
+.goal {
+    width: 350px;
+    height: 130px;
+    cursor: pointer;
+    transition: height 0.5s ease;
+    margin:auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.content {
+    padding: 50px;
+    background-color: #1b1d2aa4;
+    color: #fff;
+    border-radius: 20px;
+    height: 180px;
+    
+}
+.LG{
+    width: 65px;
+    margin-left: 210px;
+    margin-top: -35px;
+    
+}
+
+.LG1{
+    width: 75px;
+    margin-left: 210px;
+    margin-top: -35px;
+    
+}
+
+.LG-1{
+    width: 80px;
+    margin-left: 210px;
+    margin-top: -30px;
+    
+}
+.C1{
+    text-align: center;
+    margin-top: -27px;
+    margin-left: -30px;
+    font-family: Arial black, Helvetica, sans-serif;
+}
+
+.C2{
+    text-align: center;
+    margin-top: -27px;
+    margin-left: -25px;
+    font-family: Arial black, Helvetica, sans-serif;
+}
+
+.VS1{
+    margin-left: 105px;
+    margin-top: -50px;
+}
+.T1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -28px;
+    margin-top: -65px;
+}
+
+.T2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -28px;
+    margin-top: -85px;
+}
+
+.B1{
+    margin-left: -25px;
+    margin-top: -20px;
+    font-family: Arial black, Helvetica, sans-serif;
+    color: #DE023F;
+    font-size: 30px;
+}
+
+.B2{
+    margin-left: -34px;
+    margin-top: -20px;
+    font-family: Arial black, Helvetica, sans-serif;
+    color: #DE023F;
+    font-size: 30px;
+}
+
+
+.rounded-box-container {
+    display: flex;
+    width: 340px;
+    margin-left: -36px;
+    margin-top: -10px;
+}
+.rounded-box1,
+.rounded-box2 {
+    width: 150px; /* Largeur spécifique pour les boîtes */
+    height: 19px; /* Hauteur spécifique pour les boîtes */
+    background-color: #fff;
+    border-radius: 20px; /* Rayon des coins arrondis */
+    margin-right: 20px; /* Petit espace entre les deux boîtes */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.027) ;
+}
+.rounded-box3,
+.rounded-box4 {
+    width: 150px; /* Largeur spécifique pour les boîtes */
+    height: 19px; /* Hauteur spécifique pour les boîtes */
+    background-color: #fff;
+    border-radius: 20px; /* Rayon des coins arrondis */
+    margin-right: 20px; /* Petit espace entre les deux boîtes */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.027) ;
+    margin-top: 10px;   
+}
+.rounded-box5,
+.rounded-box6 {
+    width: 150px; /* Largeur spécifique pour les boîtes */
+    height: 19px; /* Hauteur spécifique pour les boîtes */
+    background-color: #fff;
+    border-radius: 20px; /* Rayon des coins arrondis */
+    margin-right: 20px; /* Petit espace entre les deux boîtes */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.027) ;
+    margin-top: 20px;   
+}
+.Comp1{
+    font-size: 12px;
+    color: #000000;
+    margin-top: 3px ;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hidden-content {
+    display: none; /* Initialisez la partie cachée comme non affichée */
+    margin-top: 10px; /* Ajustez la marge comme souhaité */
+    color: #fff; /* Couleur du texte pour la partie cachée */
+    transition: max-height 0.3s ease; /* Ajoutez une transition de hauteur pour l'animation de descente */
+}
+.rounded-link {
+    display: inline-block;
+    background-color: #DE023F;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px; /* Augmenté le rayon pour un bord plus arrondi */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.rounded-link:hover {
+    background-color: #cc0000;
+}
+
+
+/*CSS POUR LES BUT*/
+.large-box {
+    width: 80%; /* Largeur de la box */
+    max-width: 800px; /* Largeur maximale de la box */
+    margin: 50px auto; /* Marge autour de la box, centrée horizontalement */
+    padding: 20px; /* Marge intérieure de la box */
+    background-color: #1b1d2aa4; /* Couleur de fond de la box */
+    border-radius: 15px; /* Rayon des coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour la box */
+}
+
+.large-box p {
+    font-size: 22px; /* Taille du texte à l'intérieur de la box */
+    color: #DE023F; /* Couleur du texte à l'intérieur de la box */
+    margin-top: -5px;
+}
+
+ul {
+    padding: 15px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px; /* Ajoute un espace de 10 pixels en bas de chaque élément de liste */
+    font-size: 15px;
+}
+
+.FD{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -39px;
+    margin-left: 760px;
+}
+
+.FG{
+    width: 25px;
+    height: 25px;
+    margin-bottom: -56px;
+    margin-left: 544px;
+}
+
+.P1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial BLACK, Helvetica, sans-serif;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: center; /* Ajustement pour centrer les flèches */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    font-size: 25px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.arrow img{
+    width: 25px;
+    margin-bottom: -5px;
+}
+
+.previous {
+    margin-right: 10px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+.video-container {
+    max-width: 800px; /* Ajuste la largeur maximale selon tes besoins */
+    height: 500px;
+    margin: 20px auto; /* Centrer la vidéo horizontalement avec une marge de 20px en haut/bas */
+    overflow: hidden; /* Masquer le débordement pour les coins arrondis */
+    border-radius: 15px; /* Rayon des coins arrondis */
+}
+
+.rounded-video {
+    width: 100%; /* Remplit la largeur du conteneur parent */
+    height: 100%; /* Remplit la hauteur du conteneur parent */
+    border: none; /* Supprimer la bordure de l'iframe */
+}
